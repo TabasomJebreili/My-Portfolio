@@ -1,13 +1,21 @@
 from flask import Flask, render_template
-from flask_bootstrap import Bootstrap5
 
 app = Flask(__name__)
-bootstrap = Bootstrap5(app)
 
 
 @app.route('/')
-def welcome():
-    return render_template('base.html')
+def home():
+    return render_template('index.html')
+
+
+@app.route('/starter')
+def starter():
+    return render_template("starter-page.html")
+
+
+@app.route('/portfolio')
+def portfolio():
+    return render_template("portfolio-details.html")
 
 
 if __name__ == "__main__":
