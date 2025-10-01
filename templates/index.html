@@ -22,20 +22,19 @@
 
             <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
               <div class="hero-text">
-                <h1>Snap<span class="accent-text">Folio</span></h1>
-                <h2>Alexander Chen</h2>
-                <p class="lead">I'm a <span class="typed" data-typed-items="UI/UX Designer, Web Developer, Brand Strategist, Creative Director"></span></p>
-                <p class="description">Passionate about creating exceptional digital experiences that blend innovative design with functional development. Let's bring your vision to life.</p>
+                <h1>My<span class="accent-text">Portfolio</span></h1>
+                <h2>Tabasom Jebreili</h2>
+                <p class="lead">I'm a <span class="typed" data-typed-items="Full Stack Web Developer, Python Programmer, Data Enthusiast, Automation Expert
+"></span></p>
+                <p class="description">I enjoy backend development, data modeling, and building automation scripts with Python</p>
 
                 <div class="hero-actions">
-                  <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                  <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                  <a href="{{ url_for('portfolio') }}" class="btn btn-primary">View My Work</a>
+                  <a href="{{ url_for('home') }}#contact" class="btn btn-outline">Get In Touch</a>
                 </div>
 
                 <div class="social-links">
-                  <a href="#"><i class="bi bi-dribbble"></i></a>
-                  <a href="#"><i class="bi bi-behance"></i></a>
-                  <a href="#"><i class="bi bi-github"></i></a>
+                  <a href="https://github.com/TabasomJebreili"><i class="bi bi-github"></i></a>
                   <a href="#"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
@@ -45,7 +44,7 @@
               <div class="hero-visual">
                 <div class="profile-container">
                   <div class="profile-background"></div>
-                  <img src="assets/img/profile/profile-2.webp" alt="Alexander Chen" class="profile-image">
+                  <img src="{{ url_for('static', filename='assets/img/person/unnamed.png') }}" alt="Alexander Chen" class="profile-image">
                 </div>
               </div>
             </div>
@@ -66,7 +65,7 @@
             <div class="profile-card">
               <div class="profile-header">
                 <div class="profile-image">
-                  <img src="assets/img/profile/profile-square-3.webp" alt="Profile Image" class="img-fluid">
+                  <img src="{{ url_for('static', filename='assets/img/person/unnamed.png') }}" alt="Profile Image" class="img-fluid">
                 </div>
                 <div class="profile-badge">
                   <i class="bi bi-check-circle-fill"></i>
@@ -74,21 +73,21 @@
               </div>
 
               <div class="profile-content">
-                <h3>Marcus Thompson</h3>
-                <p class="profession">Creative Director &amp; Developer</p>
+                <h3>Tabasom Jebreili</h3>
+                <p class="profession">Python Developer & Backend Engineer</p>
 
                 <div class="contact-links">
-                  <a href="mailto:marcus@example.com" class="contact-item">
+                  <a href="mailto:tabasom.jebreili@gmail.com" class="contact-item">
                     <i class="bi bi-envelope"></i>
-                    marcus@example.com
+                    tabasom.jebreili@gmail.com
                   </a>
-                  <a href="tel:+15551234567" class="contact-item">
+                  <a href="tel:+989332638266" class="contact-item">
                     <i class="bi bi-telephone"></i>
-                    +1 (555) 123-4567
+                    +98 933 263 8266
                   </a>
                   <a href="#" class="contact-item">
                     <i class="bi bi-geo-alt"></i>
-                    San Francisco, CA
+                    Iran, Tehran
                   </a>
                 </div>
               </div>
@@ -99,27 +98,26 @@
             <div class="about-content">
               <div class="section-header">
                 <span class="badge-text">Get to Know Me</span>
-                <h2>Passionate About Creating Digital Experiences</h2>
+                <h2>Driven by Curiosity, Powered by Python</h2>
               </div>
 
               <div class="description">
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                <p><p>
+I’m a self-taught backend developer with an endless curiosity and a genuine love for problem-solving. With over a year and a half of dedicated, independent learning, I’ve discovered that programming is more than just code for me—it’s a way to create, explore, and challenge myself every day.
+</p>
+</p>
 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+                <p>Python is my language of choice, and I thrive on backend development and data modeling for the creativity, logic, and discovery they bring. Even without external motivation or financial reward, my passion for coding only grows stronger.</p>
               </div>
 
               <div class="stats-grid">
                 <div class="stat-item">
-                  <div class="stat-number">150+</div>
+                  <div class="stat-number">90+</div>
                   <div class="stat-label">Projects Completed</div>
                 </div>
                 <div class="stat-item">
-                  <div class="stat-number">5+</div>
+                  <div class="stat-number">2+</div>
                   <div class="stat-label">Years Experience</div>
-                </div>
-                <div class="stat-item">
-                  <div class="stat-number">98%</div>
-                  <div class="stat-label">Client Satisfaction</div>
                 </div>
               </div>
 
@@ -127,21 +125,13 @@
                 <div class="detail-row">
                   <div class="detail-item">
                     <span class="detail-label">Specialization</span>
-                    <span class="detail-value">UI/UX Design &amp; Development</span>
-                  </div>
-                  <div class="detail-item">
-                    <span class="detail-label">Experience Level</span>
-                    <span class="detail-value">Senior Professional</span>
+                    <span class="detail-value">Backend Development & Data Modeling</span>
                   </div>
                 </div>
                 <div class="detail-row">
                   <div class="detail-item">
-                    <span class="detail-label">Education</span>
-                    <span class="detail-value">Computer Science, MIT</span>
-                  </div>
-                  <div class="detail-item">
-                    <span class="detail-label">Languages</span>
-                    <span class="detail-value">English, Spanish, French</span>
+                    <span class="detail-label">Language</span>
+                    <span class="detail-value">English</span>
                   </div>
                 </div>
               </div>
@@ -164,52 +154,6 @@
 
     </section><!-- /About Section -->
 
-    <!-- Stats Section -->
-    <section id="stats" class="stats section light-background">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <div class="stats-wrapper">
-              <div class="stats-item" data-aos="zoom-in" data-aos-delay="150">
-                <div class="icon-wrapper">
-                  <i class="bi bi-emoji-smile"></i>
-                </div>
-                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Happy Clients</p>
-              </div><!-- End Stats Item -->
-
-              <div class="stats-item" data-aos="zoom-in" data-aos-delay="200">
-                <div class="icon-wrapper">
-                  <i class="bi bi-journal-richtext"></i>
-                </div>
-                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Projects</p>
-              </div><!-- End Stats Item -->
-
-              <div class="stats-item" data-aos="zoom-in" data-aos-delay="250">
-                <div class="icon-wrapper">
-                  <i class="bi bi-headset"></i>
-                </div>
-                <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Hours Of Support</p>
-              </div><!-- End Stats Item -->
-
-              <div class="stats-item" data-aos="zoom-in" data-aos-delay="300">
-                <div class="icon-wrapper">
-                  <i class="bi bi-people"></i>
-                </div>
-                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Hard Workers</p>
-              </div><!-- End Stats Item -->
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Stats Section -->
 
     <!-- Skills Section -->
     <section id="skills" class="skills section">
@@ -217,7 +161,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Skills</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Always eager to tackle new challenges, solve complex problems, and create meaningful solutions with</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -230,23 +174,23 @@
                 <div class="skill-item">
                   <div class="d-flex justify-content-between align-items-center">
                     <h4>HTML/CSS</h4>
-                    <span class="skill-percentage">95%</span>
+                    <span class="skill-percentage">80%</span>
                   </div>
                   <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <div class="skill-tooltip">Expert level knowledge of semantic HTML5 and modern CSS3 techniques</div>
                 </div>
 
                 <div class="skill-item">
                   <div class="d-flex justify-content-between align-items-center">
-                    <h4>JavaScript</h4>
+                    <h4>Bootstrap</h4>
                     <span class="skill-percentage">85%</span>
                   </div>
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
-                  <div class="skill-tooltip">Strong proficiency in ES6+, DOM manipulation, and modern frameworks</div>
+                  <div class="skill-tooltip">Experienced in building responsive and user-friendly web interfaces using Bootstrap</div>
                 </div>
 
                 <div class="skill-item">
@@ -269,13 +213,13 @@
               <div class="skills-animation">
                 <div class="skill-item">
                   <div class="d-flex justify-content-between align-items-center">
-                    <h4>Node.js</h4>
+                    <h4>Flask</h4>
                     <span class="skill-percentage">75%</span>
                   </div>
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
-                  <div class="skill-tooltip">Server-side JavaScript development with Express and REST APIs</div>
+                  <div class="skill-tooltip">Server-side Python development with Flask and REST APIs</div>
                 </div>
 
                 <div class="skill-item">
@@ -286,18 +230,18 @@
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
-                  <div class="skill-tooltip">Python development with Django and data analysis tools</div>
+                  <div class="skill-tooltip">Python development  and data analysis tools</div>
                 </div>
 
                 <div class="skill-item">
                   <div class="d-flex justify-content-between align-items-center">
-                    <h4>SQL</h4>
+                    <h4>SQLAlchemy</h4>
                     <span class="skill-percentage">65%</span>
                   </div>
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
-                  <div class="skill-tooltip">Database design, optimization, and complex queries</div>
+                  <div class="skill-tooltip">Database modeling, ORM, and efficient data manipulation with Python</div>
                 </div>
               </div>
             </div><!-- End Backend Skills -->
@@ -314,7 +258,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <p>Self-taught backend developer with a deep passion for problem solving, data modeling, and building robust solutions with Python. Over the past year and a half, I have completed 90+ hands-on projects and continuously challenged myself to learn and create without external motivation. My journey is driven by curiosity, persistence, and a love for turning ideas into real-world applications.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -324,17 +268,17 @@
           <div class="col-lg-4">
             <div class="resume-side" data-aos="fade-right" data-aos-delay="100">
               <div class="profile-img mb-4">
-                <img src="assets/img/profile/profile-square-2.webp" alt="Profile" class="img-fluid rounded">
+                <img src="{{ url_for('static', filename='assets/img/person/unnamed.png') }}" alt="Profile" class="img-fluid rounded">
               </div>
 
               <h3>Professional Summary</h3>
-              <p>Driven software architect with expertise in developing scalable, high-performance enterprise solutions. Passionate about leveraging cutting-edge technologies to solve complex business challenges.</p>
+              <p>Dedicated and self-motivated backend developer skilled in Python, data modeling, and automation. Adept at designing and building efficient backend systems, solving challenging problems, and continuously expanding my knowledge through practical projects.</p>
 
               <h3 class="mt-4">Contact Information</h3>
               <ul class="contact-info list-unstyled">
-                <li><i class="bi bi-geo-alt"></i> 742 Evergreen Terrace, Springfield, MA 02101</li>
-                <li><i class="bi bi-envelope"></i> contact@example.com</li>
-                <li><i class="bi bi-phone"></i> +1 (555) 123-4567</li>
+                <li><i class="bi bi-geo-alt"></i> West Tehran, Iran</li>
+                <li><i class="bi bi-envelope"></i> tabasom.jebreili@gmail.com</li>
+                <li><i class="bi bi-phone"></i> +98 9332638266</li>
                 <li><i class="bi bi-linkedin"></i> linkedin.com/in/example</li>
               </ul>
 
@@ -343,16 +287,26 @@
                 <div class="skill-item">
                   <div class="d-flex justify-content-between">
                     <span>Web Development</span>
-                    <span>95%</span>
+                    <span>65%</span>
                   </div>
                   <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
 
                 <div class="skill-item">
                   <div class="d-flex justify-content-between">
                     <span>UI/UX Design</span>
+                    <span>60%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>Python scripting</span>
                     <span>85%</span>
                   </div>
                   <div class="progress">
@@ -362,21 +316,11 @@
 
                 <div class="skill-item">
                   <div class="d-flex justify-content-between">
-                    <span>Cloud Architecture</span>
-                    <span>90%</span>
+                    <span>Data science</span>
+                    <span>65%</span>
                   </div>
                   <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-
-                <div class="skill-item">
-                  <div class="d-flex justify-content-between">
-                    <span>Project Management</span>
-                    <span>80%</span>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
               </div>
@@ -386,66 +330,16 @@
           <!-- Right column with experience and education -->
           <div class="col-lg-8 ps-4 ps-lg-5">
             <!-- Experience Section -->
-            <div class="resume-section" data-aos="fade-up">
-              <h3><i class="bi bi-briefcase me-2"></i>Professional Experience</h3>
-
-              <div class="resume-item">
-                <h4>Senior Software Architect</h4>
-                <h5>2022 - Present</h5>
-                <p class="company"><i class="bi bi-building"></i> Tech Innovations Inc.</p>
-                <ul>
-                  <li>Lead the architectural design and implementation of enterprise-scale applications</li>
-                  <li>Mentor team of 12 developers and establish technical best practices</li>
-                  <li>Drive adoption of microservices architecture and cloud-native solutions</li>
-                  <li>Reduce system downtime by 75% through improved architecture and monitoring</li>
-                </ul>
-              </div>
-
-              <div class="resume-item">
-                <h4>Lead Developer</h4>
-                <h5>2019 - 2022</h5>
-                <p class="company"><i class="bi bi-building"></i> Digital Solutions Corp.</p>
-                <ul>
-                  <li>Spearheaded development of company's flagship product reaching 1M+ users</li>
-                  <li>Implemented CI/CD pipeline reducing deployment time by 60%</li>
-                  <li>Managed team of 8 developers across multiple projects</li>
-                  <li>Increased code test coverage from 45% to 90%</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Education Section -->
-            <div class="resume-section" data-aos="fade-up" data-aos-delay="100">
-              <h3><i class="bi bi-mortarboard me-2"></i>Education</h3>
-
-              <div class="resume-item">
-                <h4>Master of Science in Computer Science</h4>
-                <h5>2017 - 2019</h5>
-                <p class="company"><i class="bi bi-building"></i> Stanford University</p>
-                <p>Specialized in Artificial Intelligence and Machine Learning. Graduated with honors.</p>
-              </div>
-
-              <div class="resume-item">
-                <h4>Bachelor of Science in Software Engineering</h4>
-                <h5>2013 - 2017</h5>
-                <p class="company"><i class="bi bi-building"></i> MIT</p>
-                <p>Dean's List all semesters. Led university's coding club.</p>
-              </div>
-            </div>
 
             <!-- Certifications Section -->
             <div class="resume-section" data-aos="fade-up" data-aos-delay="200">
               <h3><i class="bi bi-award me-2"></i>Certifications</h3>
 
               <div class="resume-item">
-                <h4>AWS Certified Solutions Architect - Professional</h4>
-                <h5>2023</h5>
+                <h4>100 days of code by Angela Yu in Udemy</h4>
+                <h5>2025</h5>
               </div>
 
-              <div class="resume-item">
-                <h4>Google Cloud Professional Architect</h4>
-                <h5>2022</h5>
-              </div>
             </div>
           </div>
         </div>
@@ -589,107 +483,6 @@
 
     </section><!-- /Portfolio Section -->
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="service-header">
-          <div class="row align-items-center">
-            <div class="col-lg-8 col-md-12">
-              <div class="service-intro">
-                <h2 class="service-heading">
-                  <div>Innovative business</div>
-                  <div><span>performance solutions</span></div>
-                </h2>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-12">
-              <div class="service-summary">
-                <p>
-                  We integrate forward-thinking strategies, creative approaches, and state-of-the-art technologies to deliver exceptional customer experiences that drive growth and engage target markets.
-                </p>
-                <a href="services.html" class="service-btn">
-                  View All Services
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-palette"></i>
-              </div>
-              <p>
-                Nulla facilisi. Maecenas eget magna neque. Suspendisse potenti. Curabitur eleifend nisi non magna vulputate, vel condimentum libero tempus. Proin consectetur feugiat diam.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-gem"></i>
-              </div>
-              <p>
-                Praesent euismod varius tellus, vel bibendum nunc interdum at. Donec vehicula diam vel metus venenatis convallis. Aliquam erat volutpat. Etiam viverra magna sit amet.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-megaphone"></i>
-              </div>
-              <p>
-                Vivamus tempor velit id magna dictum, sed fermentum nisi faucibus. Integer nec pretium sapien. Fusce tincidunt ligula et purus consequat, ac pellentesque nulla eleifend.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-code-slash"></i>
-              </div>
-              <p>
-                Cras fermentum odio eu feugiat malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et accumsan cursus. Morbi placerat nulla vel nunc viverra accumsan.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-graph-up"></i>
-              </div>
-              <p>
-                Aenean vel augue vel nisi bibendum posuere. Phasellus in lacus quis urna sodales dignissim. Duis aliquam libero eget risus facilisis. Quisque eget libero vel nisl fringilla.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-camera-video"></i>
-              </div>
-              <p>
-                Etiam efficitur lacus in diam finibus, nec ultrices est sagittis. Maecenas elementum magna sed risus faucibus, nec commodo purus facilisis. Vestibulum accumsan magna.
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section light-background">
@@ -697,37 +490,17 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
       <div class="container">
 
-        <div class="testimonial-masonry">
-
-          <div class="testimonial-item" data-aos="fade-up">
-            <div class="testimonial-content">
-              <div class="quote-pattern">
-                <i class="bi bi-quote"></i>
-              </div>
-              <p>Implementing innovative strategies has revolutionized our approach to market challenges and competitive positioning.</p>
-              <div class="client-info">
-                <div class="client-image">
-                  <img src="assets/img/person/person-f-7.webp" alt="Client">
-                </div>
-                <div class="client-details">
-                  <h3>Rachel Bennett</h3>
-                  <span class="position">Strategy Director</span>
-                </div>
-              </div>
-            </div>
-          </div>
 
           <div class="testimonial-item highlight" data-aos="fade-up" data-aos-delay="100">
             <div class="testimonial-content">
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>Exceptional service delivery and innovative solutions have transformed our business operations, leading to remarkable growth and enhanced customer satisfaction across all touchpoints.</p>
+              <p>“Tabasom is a highly motivated self-taught developer with a real passion for problem-solving. Her dedication to continuous learning and ability to tackle challenging backend tasks sets her apart.”</p>
               <div class="client-info">
                 <div class="client-image">
                   <img src="assets/img/person/person-m-7.webp" alt="Client">
@@ -740,81 +513,9 @@
             </div>
           </div>
 
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
-            <div class="testimonial-content">
-              <div class="quote-pattern">
-                <i class="bi bi-quote"></i>
-              </div>
-              <p>Strategic partnership has enabled seamless digital transformation and operational excellence.</p>
-              <div class="client-info">
-                <div class="client-image">
-                  <img src="assets/img/person/person-f-8.webp" alt="Client">
-                </div>
-                <div class="client-details">
-                  <h3>Emma Thompson</h3>
-                  <span class="position">Digital Lead</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
-            <div class="testimonial-content">
-              <div class="quote-pattern">
-                <i class="bi bi-quote"></i>
-              </div>
-              <p>Professional expertise and dedication have significantly improved our project delivery timelines and quality metrics.</p>
-              <div class="client-info">
-                <div class="client-image">
-                  <img src="assets/img/person/person-m-8.webp" alt="Client">
-                </div>
-                <div class="client-details">
-                  <h3>Christopher Lee</h3>
-                  <span class="position">Technical Director</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-item highlight" data-aos="fade-up" data-aos-delay="400">
-            <div class="testimonial-content">
-              <div class="quote-pattern">
-                <i class="bi bi-quote"></i>
-              </div>
-              <p>Collaborative approach and industry expertise have revolutionized our product development cycle, resulting in faster time-to-market and increased customer engagement levels.</p>
-              <div class="client-info">
-                <div class="client-image">
-                  <img src="assets/img/person/person-f-9.webp" alt="Client">
-                </div>
-                <div class="client-details">
-                  <h3>Olivia Carter</h3>
-                  <span class="position">Product Manager</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="500">
-            <div class="testimonial-content">
-              <div class="quote-pattern">
-                <i class="bi bi-quote"></i>
-              </div>
-              <p>Innovative approach to user experience design has significantly enhanced our platform's engagement metrics and customer retention rates.</p>
-              <div class="client-info">
-                <div class="client-image">
-                  <img src="assets/img/person/person-m-13.webp" alt="Client">
-                </div>
-                <div class="client-details">
-                  <h3>Nathan Brooks</h3>
-                  <span class="position">UX Director</span>
-                </div>
-              </div>
-            </div>
-          </div>
 
         </div>
 
-      </div>
 
     </section><!-- /Testimonials Section -->
 
@@ -824,7 +525,8 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Feel free to reach out for collaborations, questions, or just to say hi! I’m always open to connecting with fellow developers and new opportunities.
+</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -833,7 +535,8 @@
           <div class="col-lg-5">
             <div class="info-box">
               <h3>Contact Info</h3>
-              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
+              <p>If you’d like to get in touch for project collaborations, mentorship, or just to chat about tech and coding, my contact details are below.
+</p>
 
               <div class="info-item">
                 <div class="icon-box">
@@ -841,8 +544,7 @@
                 </div>
                 <div class="content">
                   <h4>Our Location</h4>
-                  <p>A108 Adam Street</p>
-                  <p>New York, NY 535022</p>
+                  <p>West Tehran, Iran</p>
                 </div>
               </div>
 
@@ -852,8 +554,7 @@
                 </div>
                 <div class="content">
                   <h4>Phone Number</h4>
-                  <p>+1 5589 55488 55</p>
-                  <p>+1 6678 254445 41</p>
+                  <p>+98 9332638266</p>
                 </div>
               </div>
 
@@ -863,8 +564,8 @@
                 </div>
                 <div class="content">
                   <h4>Email Address</h4>
-                  <p>info@example.com</p>
-                  <p>contact@example.com</p>
+                  <p>tabasom.jebreili@gmail.com</p>
+                  <p>fatemejebreili@ut.ac.ir</p>
                 </div>
               </div>
             </div>
@@ -873,7 +574,7 @@
           <div class="col-lg-7">
             <div class="contact-form">
               <h3>Get In Touch</h3>
-              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
+              <p>Send me a message and I’ll get back to you soon!</p>
 
               <form action="../SnapFolio/forms/contact.php" method="post" class="php-email-form">
                 <div class="row gy-4">
