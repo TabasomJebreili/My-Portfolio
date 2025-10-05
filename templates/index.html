@@ -502,11 +502,8 @@ I’m a self-taught backend developer with an endless curiosity and a genuine lo
               </div>
               <p>“Tabasom is a highly motivated self-taught developer with a real passion for problem-solving. Her dedication to continuous learning and ability to tackle challenging backend tasks sets her apart.”</p>
               <div class="client-info">
-                <div class="client-image">
-                  <img src="assets/img/person/person-m-7.webp" alt="Client">
-                </div>
                 <div class="client-details">
-                  <h3>Daniel Morgan</h3>
+                  <h3>Fateme</h3>
                   <span class="position">Chief Innovation Officer</span>
                 </div>
               </div>
@@ -576,23 +573,24 @@ I’m a self-taught backend developer with an endless curiosity and a genuine lo
               <h3>Get In Touch</h3>
               <p>Send me a message and I’ll get back to you soon!</p>
 
-              <form action="../SnapFolio/forms/contact.php" method="post" class="php-email-form">
+              <form action="{{url_for('home')}}" method="post" class="php-email-form">
+                  {{ form.csrf_token }}
                 <div class="row gy-4">
 
                   <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                     {{ form.name(class="form-control", placeholder="Your Name") }}
                   </div>
 
                   <div class="col-md-6 ">
-                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                    {{ form.email(class="form-control", placeholder="Your Email") }}
                   </div>
 
                   <div class="col-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                     {{ form.subject(class="form-control", placeholder="Subject") }}
                   </div>
 
                   <div class="col-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                    {{ form.message(class="form-control", placeholder="Message", rows=6) }}
                   </div>
 
                   <div class="col-12 text-center">
