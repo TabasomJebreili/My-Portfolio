@@ -573,36 +573,51 @@ I’m a self-taught backend developer with an endless curiosity and a genuine lo
               <h3>Get In Touch</h3>
               <p>Send me a message and I’ll get back to you soon!</p>
 
-              <form action="{{url_for('home')}}" method="post" class="php-email-form">
+              <form action="{{url_for('home')}}" method="post" >
                   {{ form.csrf_token }}
                 <div class="row gy-4">
 
                   <div class="col-md-6">
                      {{ form.name(class="form-control", placeholder="Your Name") }}
+                      {% for err in form.name.errors %}
+                        <span style="color:red">{{ err }}</span>
+                      {% endfor %}
                   </div>
 
                   <div class="col-md-6 ">
                     {{ form.email(class="form-control", placeholder="Your Email") }}
+                      {% for err in form.email.errors %}
+                        <span style="color:red">{{ err }}</span>
+                      {% endfor %}
                   </div>
 
                   <div class="col-12">
                      {{ form.subject(class="form-control", placeholder="Subject") }}
+                      {% for err in form.subject.errors %}
+                        <span style="color:red">{{ err }}</span>
+                      {% endfor %}
                   </div>
 
                   <div class="col-12">
                     {{ form.message(class="form-control", placeholder="Message", rows=6) }}
+                      {% for err in form.message.errors %}
+                        <span style="color:red">{{ err }}</span>
+                      {% endfor %}
                   </div>
 
                   <div class="col-12 text-center">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                    {% with messages = get_flashed_messages() %}
+                        {% if messages %}
+                            <p>{{ messages[0] }}</p>
+                        {% endif %}
+                    {% endwith %}
 
                     <button type="submit" class="btn">Send Message</button>
                   </div>
 
                 </div>
               </form>
+
 
             </div>
           </div>
@@ -640,7 +655,6 @@ I’m a self-taught backend developer with an endless curiosity and a genuine lo
 
   <!-- Vendor JS Files -->
   <script src="{{ url_for('static',filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-  <script src="{{ url_for('static',filename='assets/vendor/php-email-form/validate.js') }}"></script>
   <script src="{{ url_for('static',filename='assets/vendor/aos/aos.js') }}"></script>
   <script src="{{ url_for('static',filename='assets/vendor/typed.js/typed.umd.js') }}"></script>
   <script src="{{ url_for('static',filename='assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>

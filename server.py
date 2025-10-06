@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, url_for, redirect
+from flask import Flask, render_template, request, url_for, redirect, flash
 from flask_wtf import FlaskForm
 from wtforms import StringField, EmailField, SubmitField
 from wtforms.validators import DataRequired, Email, Length
@@ -37,10 +37,15 @@ def home():
             connection.sendmail(from_addr=user, to_addrs=to_adr, msg=f"Subject:{subject}\n\n{message}\n"
                                                                      f"This massage is from user:{name} with email of:"
                                                                      f"{email}")
-        return redirect(url_for('home') + '#contact')
+            flash("Your message have sent successfully!")
+            return redirect('/#contact')
 
+    elif request.method == 'POST':
+        flash("Please fill the form Correctly")
+        return redirect('/#contact')
     else:
         return render_template('index.html', form=contact_form)
+
 
 
 @app.route('/starter')
