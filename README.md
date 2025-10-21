@@ -1,4 +1,3 @@
----
 
 ## 🚀 Live Demo
 
@@ -6,7 +5,6 @@
 
 > Visit the live site: [https://tabasom.dev]
 
----
 
 # Tabasom.dev
 
@@ -16,7 +14,6 @@ This site showcases my best programming projects (all hosted on my GitHub), alon
 my background and ways to contact me. The site uses a customized Bootstrap template. 
 All navigation links and project sections are dynamic and easy to update via Flask templates.
 
----
 
 ## ✨ Features
 
@@ -33,13 +30,11 @@ All navigation links and project sections are dynamic and easy to update via Fla
 - All project and page links are rendered dynamically from Python/Flask code.
 - Projects section fetches and displays my public GitHub repositories.
 
----
 
 ## 📫 Contact
 
 Feel free to reach out via the [https://tabasom.dev/#contact] on my website  
 or connect with me on [https://www.linkedin.com/in/tabasom-jebreili/].
 
----
 
 **Made with Flask, Bootstrap, and a lot of love!**
