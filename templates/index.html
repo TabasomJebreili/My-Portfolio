@@ -354,7 +354,9 @@ I’m a self-taught backend developer with an endless curiosity and a genuine lo
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <p>Here you’ll find a selection of my favorite projects—from practical Python tools to creative experiments.
+Each project challenged me to learn something new and improve my skills.
+Feel free to explore and check out the details or visit my GitHub for more!</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -366,10 +368,10 @@ I’m a self-taught backend developer with an endless curiosity and a genuine lo
               <div class="filters-wrapper" data-aos="fade-right" data-aos-delay="150">
                 <ul class="portfolio-filters isotope-filters">
                   <li data-filter="*" class="filter-active">All Projects</li>
-                  <li data-filter=".filter-photography">Photography</li>
-                  <li data-filter=".filter-design">Design</li>
-                  <li data-filter=".filter-automotive">Automotive</li>
-                  <li data-filter=".filter-nature">Nature</li>
+                  <li data-filter=".filter-photography">GUI</li>
+                  <li data-filter=".filter-design">Game</li>
+                  <li data-filter=".filter-automotive">Python Scripts</li>
+                  <li data-filter=".filter-nature">Data</li>
                 </ul>
               </div>
             </div>
@@ -379,14 +381,13 @@ I’m a self-taught backend developer with an endless curiosity and a genuine lo
 
                 <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photography">
                   <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-portrait-1.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <img src="{{ url_for('static', filename='assets/img/portfolio/watermark.png') }}" class="img-fluid" alt="Portfolio Image" loading="lazy">
                     <div class="portfolio-info">
                       <div class="content">
-                        <span class="category">Photography</span>
-                        <h4>Capturing Moments</h4>
+                        <span class="category">GUI</span>
+                        <h4 style="color:white">Watermark Your Images</h4>
                         <div class="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-portrait-1.webp" class="glightbox" title="Capturing Moments"><i class="bi bi-plus-lg"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                          <a href="https://github.com/TabasomJebreili/Watermarking-Images" title="More Details"><i class="bi bi-arrow-right"></i></a>
                         </div>
                       </div>
                     </div>
@@ -395,14 +396,13 @@ I’m a self-taught backend developer with an endless curiosity and a genuine lo
 
                 <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
                   <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <img src="{{ url_for('static', filename='assets/img/portfolio/tictactoe.png') }}" class="img-fluid" alt="Portfolio Image" loading="lazy">
                     <div class="portfolio-info">
                       <div class="content">
-                        <span class="category">Web Design</span>
-                        <h4>Woodcraft Design</h4>
+                        <span class="category">Game</span>
+                        <h4 style="color:white">X O Game!</h4>
                         <div class="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-2.webp" class="glightbox" title="Woodcraft Design"><i class="bi bi-plus-lg"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                          <a href="https://github.com/TabasomJebreili/TicTacToe" title="More Details"><i class="bi bi-arrow-right"></i></a>
                         </div>
                       </div>
                     </div>
@@ -411,14 +411,13 @@ I’m a self-taught backend developer with an endless curiosity and a genuine lo
 
                 <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-automotive">
                   <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-portrait-2.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <img src="{{ url_for('static', filename='assets/img/portfolio/morsecode.png') }}" class="img-fluid" alt="Portfolio Image" loading="lazy">
                     <div class="portfolio-info">
                       <div class="content">
-                        <span class="category">Automotive</span>
-                        <h4>Classic Beauty</h4>
+                        <span class="category">Python Script</span>
+                        <h4 style="color:white">Easy Converter</h4>
                         <div class="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-portrait-2.webp" class="glightbox" title="Classic Beauty"><i class="bi bi-plus-lg"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                          <a href="https://github.com/TabasomJebreili/TextMorseCodeConverter" title="More Details"><i class="bi bi-arrow-right"></i></a>
                         </div>
                       </div>
                     </div>
